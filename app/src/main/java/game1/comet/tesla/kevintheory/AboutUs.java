@@ -6,13 +6,9 @@ package game1.comet.tesla.kevintheory;
  * All rights reserved.
  */
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -21,6 +17,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class AboutUs extends AppCompatActivity {
 
@@ -96,28 +93,30 @@ public class AboutUs extends AppCompatActivity {
 
     public void doSendSMSTo(View v) {
         v.startAnimation(Rotate);
-        String phoneNumber = "18081925082";
-        String message = getString(R.string.text30);
-        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto:" + phoneNumber));
-        intent.putExtra("sms_body", message);
-        startActivity(intent);
+        Toast.makeText(AboutUs.this, "抱歉，冰封为了保护隐私已禁用电话啦！", Toast.LENGTH_SHORT).show();
+//        String phoneNumber = "18081925082";
+//        String message = getString(R.string.text30);
+//        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto:" + phoneNumber));
+//        intent.putExtra("sms_body", message);
+//        startActivity(intent);
     }
 
     public void callMe(View v) {
         v.startAnimation(Rotate);
-        Intent call = new Intent(Intent.ACTION_CALL, Uri.parse("tel:18081925082"));
-        call.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
-        startActivity(call);
+        Toast.makeText(AboutUs.this, "抱歉，冰封为了保护隐私已禁用电话啦！", Toast.LENGTH_SHORT).show();
+//        Intent call = new Intent(Intent.ACTION_CALL, Uri.parse("tel:18081925082"));
+//        call.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+//            // TODO: Consider calling
+//            //    ActivityCompat#requestPermissions
+//            // here to request the missing permissions, and then overriding
+//            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+//            //                                          int[] grantResults)
+//            // to handle the case where the user grants the permission. See the documentation
+//            // for ActivityCompat#requestPermissions for more details.
+//            return;
+//        }
+//        startActivity(call);
     }
 
 }
