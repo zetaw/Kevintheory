@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="game1.comet.tesla.kevintheory.Items"
+    android:id="@+id/Items"
+    android:clickable="true"
+    android:background="@drawable/back1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text16"
+        android:id="@+id/back"
+        android:background="@drawable/button3"
+        android:onClick="returnToMainFromItems"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/Rest"
+        android:text="@string/text18"
+        android:textSize="15sp"
+        android:layout_above="@+id/back"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/text12121212"
+        android:text="@string/text20"
+        android:textSize="15sp"
+        android:layout_above="@+id/Rest"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/text12121212">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/normalpic"
+                android:src="@drawable/noting"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/excite"
+                android:src="@drawable/crazy"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/excite2"
+                 android:src="@drawable/crazy2"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/learn"
+                 android:src="@drawable/learn1"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/learn2"
+                android:src="@drawable/learn2"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/bossImage"
+                android:src="@drawable/boss_smile"
+                android:visibility="invisible"
+                tools:visibility="visible"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ViewFlipper
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewFlipper"
+        android:layout_alignTop="@+id/horizontalScrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="126dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="192dp" />
+</RelativeLayout>

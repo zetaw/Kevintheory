@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015.
+  ~ Coded by Tesla.
+  ~ All rights reserved.
+  -->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate
+        android:fromXDelta="0%p"
+        android:fromYDelta="0%p"
+        android:toXDelta="0%p"
+        android:toYDelta="20%p"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:repeatCount="4"
+        android:duration="500"
+        android:repeatMode="reverse"
+        />
+</set>

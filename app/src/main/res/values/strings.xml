@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">凌辱罗旭恒 </string>
+    <string name="text01">进入游戏</string>
+    <string name="text02">点击发射</string>
+    <string name="text03">换武器</string>
+    <string name="text06">兴奋值</string>
+    <string name="text07">体力值</string>
+    <string name="text08">学习值</string>
+    <string name="text09">本游戏个人制作</string>
+    <string name="text10">——张寅森</string>
+    <string name="text11">作者QQ:951394653</string>
+    <string name="text12">百度ID：精灵谱尼</string>
+    <string name="text13">罗旭恒の画廊</string>
+
+    <string name="action_settings">设置</string>
+    <string name="title_activity_start">开始</string>
+    <string name="title_activity_items">物品</string>
+    <string name="hello_world">你好世界！</string>
+
+    <string name="text14">兴奋状态</string>
+    <string name="text15">学习状态</string>
+    <string name="text16">返回</string>
+    <string name="text17">恭喜你，您已集齐罗旭恒全部写真！</string>
+    <string name="text18">还差一点哦~试试让罗旭恒变得奇怪吧~</string>
+    <string name="text19">使用武器射击罗旭恒吧！~</string>
+
+    <string name="shoot_mashiro">射击真白~</string>
+    <string name="shoot_ms_wang">射击汪老师~</string>
+    <string name="shoot_mr_shao">射击邵老师~</string>
+    <string name="shoot_mr_he">射击小贱贱~</string>
+
+    <string name="unlocked">新写真解锁.</string>
+    <string name="back">再按一次退出.</string>
+
+    <string name="toast_text1">啊~本子！我需要本子!~</string>
+    <string name="toast_text2">嘿嘿，我好兴奋呐!</string>
+    <string name="toast_text3">老子要撸作业了!</string>
+    <string name="toast_text4">唉 刷题刷题！!</string>
+    <string name="toast_text5">咋个了嘛，烦得很!</string>
+    <string name="text20">在屏幕上滑动手指可以读取坐标。</string>
+    <string name="text21">手指坐标：</string>
+    <string name="text22">武器の画廊</string>
+    <string name="title_activity_weapons">Weapons</string>
+    <string name="title_activity_about_us">关于我们</string>
+    <string name="text23">关于作者</string>
+    <string name="text24">呼叫作者</string>
+    <string name="text25">嘿~我是千里冰封哦~这个小游戏就是我做的啦~</string>
+    <string name="text26">有什么问题多多指教啦大神们~</string>
+    <string name="text27">要找我也很简单哦~（本人真名姓张名寅森</string>
+    <string name="text28">猛戳左下角↙嚯呀~</string>
+    <string name="text29">本游戏有中英双语版本自动适配哦~</string>
+    <string name="text30" >对作品有什么建议？</string>
+    <string name="text31">短信作者</string>
+    <string name="title_activity_fight_boss">打老BOSS了！</string>
+    <string name="text32">罗旭恒开始直升考试了！迎击！！</string>
+    <string name="text33">20秒内战胜他！加油！考验手速的时候到了！</string>
+    <string name="text34">你这个懦夫不配参加直升考试！</string>
+    <string name="text35">挑战失败，少年多撸管练习练习吧！</string>
+    <string name="text36">战胜了！</string>
+</resources>

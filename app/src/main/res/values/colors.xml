@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015.
+  ~ Coded by Tesla.
+  ~ All rights reserved.
+  -->
+
+<resources>
+    <color name="background_material_light">#6a40af</color>
+    <color name="primary_material_light">#23139c</color>
+</resources>

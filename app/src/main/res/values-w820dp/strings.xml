@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015.
+  ~ Coded by Tesla.
+  ~ All rights reserved.
+  -->
+
+<resources>
+    <string name="text23">关于作者</string>
+    <string name="text30" >对作品有什么建议？</string>
+    <string name="text36">战胜了！</string>
+</resources>

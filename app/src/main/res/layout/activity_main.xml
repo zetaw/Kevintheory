@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/main"
+    android:visibility="visible">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/talker"
+        android:background="@drawable/talker"
+        android:visibility="invisible"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:visibility="visible"
+        android:gravity="center"
+        android:layout_below="@+id/normal"
+        android:layout_alignLeft="@+id/normal"
+        android:layout_alignStart="@+id/normal"
+        android:alpha="0.9"
+        android:textColor="#000"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:singleLine="false" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/normal"
+        android:src="@drawable/noting"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:text="@string/text02"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="shootWeapon"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@drawable/button1"
+        android:textSize="10sp"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text06"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text07"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text08"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_above="@+id/textView2"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:alpha="0.7" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar2"
+        android:indeterminate="false"
+        android:layout_above="@+id/textView3"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_alignRight="@+id/progressBar"
+        android:layout_alignEnd="@+id/progressBar"
+        android:alpha="0.7" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_alignRight="@+id/progressBar2"
+        android:layout_alignEnd="@+id/progressBar2"
+        android:alpha="0.7" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:text="@string/text13"
+        android:id="@+id/showItem"
+        android:onClick="showPhotos"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@drawable/button4"
+        android:textSize="10sp"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/bullet"
+        android:src="@drawable/bullet1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/text22"
+        android:id="@+id/button3"
+        android:onClick="showWeapons"
+        android:background="@drawable/button4"
+        android:textSize="10sp"
+        android:layout_above="@+id/showItem"
+        android:layout_alignRight="@+id/showItem"
+        android:layout_alignEnd="@+id/showItem"
+        android:textColor="#fff"
+        android:layout_alignLeft="@+id/showItem"
+        android:layout_alignStart="@+id/showItem" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/text23"
+        android:id="@+id/goToAboutUs"
+        android:layout_above="@+id/button3"
+        android:background="@drawable/button4"
+        android:textColor="#fff"
+        android:nestedScrollingEnabled="false"
+        android:onClick="showAboutus"
+        android:textSize="10sp"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        tools:ignore="UnusedAttribute" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="80dp"
+        android:id="@+id/goRight"
+        android:src="@drawable/go_right"
+        android:layout_alignTop="@+id/bullet"
+        android:layout_toRightOf="@+id/bullet"
+        android:layout_toEndOf="@+id/bullet"
+        android:onClick="changeWeapon" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="80dp"
+        android:id="@+id/goLeft"
+        android:src="@drawable/go_left"
+        android:layout_alignTop="@+id/bullet"
+        android:layout_toLeftOf="@+id/bullet"
+        android:layout_toStartOf="@+id/bullet"
+        android:onClick="changeWeapon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/counter"
+        android:layout_below="@+id/progressBar3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+</RelativeLayout>
