@@ -45,7 +45,7 @@ public class Start extends AppCompatActivity {
         Animation showTextsFromLeft = AnimationUtils.loadAnimation(this, R.anim.show_texts_from_left);
         Animation showTextsFromRight = AnimationUtils.loadAnimation(this, R.anim.show_texts_from_right);
 
-//        logo.startAnimation(ShowLogo);
+        logo.startAnimation(showLogo);
         startGame.startAnimation(showLoginButton);
 
         toFloat();
