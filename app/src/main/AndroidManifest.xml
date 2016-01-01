@@ -19,7 +19,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="nosensor"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,31 +29,31 @@
         <activity
             android:name=".Items"
             android:label="@string/title_activity_items"
-            android:screenOrientation="nosensor"
+            android:screenOrientation="portrait"
             android:theme="@style/Items" >
         </activity>
         <activity
             android:name=".Start"
             android:label="@string/title_activity_start"
-            android:screenOrientation="nosensor"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
             android:name=".Weapons"
             android:label="@string/title_activity_weapons"
-            android:screenOrientation="nosensor"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
             android:name=".AboutUs"
             android:label="@string/title_activity_about_us"
-            android:screenOrientation="nosensor"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
             android:name=".FightBoss"
             android:label="@string/title_activity_fight_boss"
-            android:screenOrientation="nosensor"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme">
         </activity>
     </application>
