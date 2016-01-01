@@ -11,11 +11,11 @@
         android:layout_height="150dp"
         android:id="@+id/Logo"
         android:src="@drawable/logo"
-        android:layout_above="@+id/show_view2"
         android:visibility="invisible"
         xmlns:tools="http://schemas.android.com/tools"
         tools:visibility="visible"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/show_view2"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,6 +27,17 @@
         android:alpha="1"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ncFloat"
+        tools:background="@drawable/nc_anim1"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -67,11 +78,15 @@
         android:layout_height="wrap_content"
         android:text="@string/text01"
         android:id="@+id/Login"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:visibility="visible"
         android:onClick="gettingStarted"
         android:background="@drawable/button2"
-        android:textColor="#FF441151" />
+        android:textColor="#FF441151"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="45dp"/>
 
 </RelativeLayout>

@@ -1,6 +1,7 @@
 package game1.comet.tesla.kevintheory;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -47,12 +48,14 @@ public class Start extends AppCompatActivity {
 //        logo.startAnimation(ShowLogo);
         startGame.startAnimation(showLoginButton);
 
+        toFloat();
+
         boolean bool = true;
         for (TextView Text : Texts) {
-            if(bool)
-            {
+            if(bool) {
                 Text.startAnimation(showTextsFromLeft);
-            }else {
+            }
+            else {
                 Text.startAnimation(showTextsFromRight);
             }
             bool = !bool;
@@ -133,5 +136,13 @@ public class Start extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void toFloat(){
+        ImageView NC = (ImageView) findViewById(R.id.ncFloat);
+        NC.setBackgroundResource(R.drawable.nc_floating);
+
+        AnimationDrawable NCFloat = (AnimationDrawable) NC.getBackground();
+        NCFloat.start();
     }
 }

@@ -1,6 +1,6 @@
 package game1.comet.tesla.kevintheory;
 
-/*
+/**
  * Copyright (c) 2015.
  * Coded by Tesla.
  * All rights reserved.
@@ -67,8 +67,9 @@ public class FightBoss extends AppCompatActivity {
         bossBlood.setProgress(blood);
 
 //        振动，检查是否允许了
-        if(PermissionChecker.checkCallingOrSelfPermission(this,"android.permission.VIBRATE") == PermissionChecker.PERMISSION_GRANTED)
-        {
+        if(PermissionChecker.checkCallingOrSelfPermission(this,
+                "android.permission.VIBRATE") ==
+                PermissionChecker.PERMISSION_GRANTED) {
             ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(1000);
         }
 
@@ -151,7 +152,8 @@ public class FightBoss extends AppCompatActivity {
             cntChange +=weaponsInFightBossActivity.size();
         }
         cntChange %= weaponsInFightBossActivity.size();
-        Log.w(Constants.MY_TAG, "" + "weaponsInFightBossActivity.size = " + weaponsInFightBossActivity.size() + ",cntChange=" + cntChange);
+        Log.w(Constants.MY_TAG, "weaponsInFightBossActivity.size = " +
+                weaponsInFightBossActivity.size() + ",cntChange=" + cntChange);
         bullet.setImageResource(weaponsInFightBossActivity.get(cntChange).getResourse());
     }
 

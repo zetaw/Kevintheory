@@ -474,7 +474,9 @@ public class MainActivity extends AppCompatActivity {
             cntchange+=weapons.size();
         }
         cntchange %= weapons.size();
-        Log.d(Constants.MY_TAG,""+"weapons.size = "+weapons.size()+",cntchange="+cntchange);
+        Log.d(Constants.MY_TAG,"weapons.size = " +
+                weapons.size() + ",cntchange=" +
+                cntchange);
         bullet.setImageResource(weapons.get(cntchange).getResourse());
     }
 
