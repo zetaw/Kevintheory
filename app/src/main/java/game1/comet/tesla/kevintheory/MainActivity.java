@@ -164,8 +164,6 @@ public class MainActivity extends AppCompatActivity {
         study = (ProgressBar)findViewById(R.id.progressBar3);
         study.setMax(Constants.LIMITE_OF_VALUES);
 
-        RelativeLayout main = (RelativeLayout)findViewById(R.id.main);
-        Button buttonToAboutUs = (Button) findViewById(R.id.goToAboutUs);
         bullet = (ImageView)findViewById(R.id.bullet);
         state = (ImageView)findViewById(R.id.normal);
         counter = (TextView)findViewById(R.id.counter);
@@ -182,12 +180,7 @@ public class MainActivity extends AppCompatActivity {
 //        setContentView(pointOnTheScreen);
 
         if (ifTheBossIsFought()){
-            main.setBackgroundResource(back5);
-            buttonToAboutUs.setVisibility(View.VISIBLE);
-            if (!isAboutUsShowed) {
-                isAboutUsShowed = true;
-                buttonToAboutUs.startAnimation(bossAppear);
-            }
+            win();
         }
 //        else {
 //            main.setBackgroundResource(back3);
@@ -258,6 +251,7 @@ public class MainActivity extends AppCompatActivity {
                 if(resultCode == RESULT_OK){
                     isBossFought = data.getBooleanExtra(Constants.fightBossKey,false);
                     Log.e(Constants.MY_TAG,"isBossFought = "+isBossFought);
+                    win();
                 }
                 break;
             default:
@@ -330,6 +324,17 @@ public class MainActivity extends AppCompatActivity {
     private void toTalk(String txt) {
         toTalk.setVisibility(View.VISIBLE);
         toTalk.setText(txt);
+    }
+
+    private void win(){
+        RelativeLayout main = (RelativeLayout)findViewById(R.id.main);
+        Button buttonToAboutUs = (Button) findViewById(R.id.goToAboutUs);
+        main.setBackgroundResource(back5);
+        buttonToAboutUs.setVisibility(View.VISIBLE);
+        if (!isAboutUsShowed) {
+            isAboutUsShowed = true;
+            buttonToAboutUs.startAnimation(bossAppear);
+        }
     }
 
     private void checkUnlockState(int i){
@@ -413,6 +418,7 @@ public class MainActivity extends AppCompatActivity {
     public static long getCounterInt() {
         return counterInt;
     }
+
     public static void setCounterText(){
         counter.setText("" + counterInt);
     }
